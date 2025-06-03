@@ -1,12 +1,14 @@
 {
   "name": "vite-plugin-expose",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "build": "webpack && tsc --emitDeclarationOnly"
   },
   "keywords": [],
+  "files": ["lib","tsconfig.json"],
   "author": "",
   "license": "ISC",
   "devDependencies": {

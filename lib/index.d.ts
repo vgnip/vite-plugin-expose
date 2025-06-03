@@ -1,5 +1,8 @@
-declare function expose(options?: {
-    [key: string]: string;
-}): number;
-declare const age = 12;
+export default function vitePluginExpose(options?: any): {
+    name: string;
+    transform(code: string, flePath: string): {
+        code: string;
+        map: null;
+    } | null;
+};
 //# sourceMappingURL=index.d.ts.map
