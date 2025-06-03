@@ -1,14 +1,26 @@
 {
   "name": "vite-plugin-expose",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "description": "",
-  "main": "./lib/index.js",
+  "main": "./lib/vite-plugin-expose.js",
   "types": "./lib/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./lib/vite-plugin-expose.js",
+      "import": "./lib/vite-plugin-expose.js"
+    }
+  },
   "scripts": {
-    "build": "webpack && tsc --emitDeclarationOnly"
+    "build": "webpack && tsc --emitDeclarationOnly",
+    "vite:build": "vite build"
   },
   "keywords": [],
-  "files": ["lib","tsconfig.json"],
+  "files": [
+    "lib",
+    "tsconfig.json",
+    "src"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -18,5 +30,8 @@
     "typescript": "^5.8.3",
     "webpack": "^5.99.9",
     "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "vite": "^6.3.5"
   }
 }

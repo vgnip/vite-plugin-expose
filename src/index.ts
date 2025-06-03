@@ -1,4 +1,4 @@
-export default function vitePluginExpose(options: any = {}) {
+export const vitePluginExpose = (options: any = {}) => {
     const {
         globalObject = 'self',
     } = options;
@@ -89,9 +89,4 @@ export default function vitePluginExpose(options: any = {}) {
             return null;
         }
     };
-}
-
-
-module.exports = {
-    vitePluginExpose
 }
