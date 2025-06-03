@@ -57,7 +57,6 @@ export const vitePluginExpose = (options: any = {}) => {
                     }
                 } else {
                     // 暴露整个模块 - 改用动态导入
-                    console.log("非member-hhhh")
                     const moduleName = globalName || modulePath.split('/').pop().replace(/\..+$/, '');
                     injection += `
             if (typeof ${globalObject}.${moduleName} === 'undefined') {
@@ -68,7 +67,6 @@ export const vitePluginExpose = (options: any = {}) => {
               });
             }
           `;
-                    console.log('injection---', injection)
                 }
                 if (injection) {
                     injections.push(injection);

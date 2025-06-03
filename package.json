@@ -18,8 +18,7 @@
   "keywords": [],
   "files": [
     "lib",
-    "tsconfig.json",
-    "src"
+    "tsconfig.json"
   ],
   "author": "",
   "license": "ISC",
