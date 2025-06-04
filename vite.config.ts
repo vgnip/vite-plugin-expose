@@ -9,7 +9,7 @@ export default defineConfig({
         outDir: "lib",
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
-            name: 'vite-plugin-expose',
+            fileName: 'index',
             formats: ['es']
         }
     },
